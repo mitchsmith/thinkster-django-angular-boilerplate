@@ -39,4 +39,31 @@
     * Define the module and it's dependencies (eg. static/javascripts/authentication/authentication.module.js)
     * Update the root module to include it's new dependencies (eg. static/javascripts/thinkster.js)
     * Include the new js files in the appropriate Django template (eg. templates/javascripts.html)
+* Create/edit layout template for the navbar register controll (eg. static/templates/layout/navbar.html) 
+
+*SAME THING FOR POSTS: localhost:/api/v1/posts/ and '/api/v1/accounts/' + username + '/posts/'*
+
+* static/javascripts/posts/posts.module.js (define module)
+* static/javascripts/thinkster.js (add module as a dependency)
+* templates/javascripts.html (add module script tag to django template)
+* static/javascripts/posts/services/posts.service.js (define the service ie. create a factory)
+* templates/javascripts.html (add service script tag to django template)
+* static/templates/layout/index.html (add/modify layout template. Example employs a directive, posts)
+    * The posts interface employs a snackbar utility for communicating the status of post actions:
+    * static/javascripts/utils/utils.module.js (the module)
+    * static/javascripts/utils/services/snackbar.service.js (the service)
+    * static/javascripts/thinkster.js (add the utis module as a dependency)
+* templates/javascripts.html (add utils and the snackbar service script tag to django template)
+* static/javascripts/layout/controllers/index.controller.js (layout controller for the index page)
+* static/javascripts/thinkster.routes.js (append the route for the index)
+* static/javascripts/posts/directives/posts.directive.js (define the directive, post, used in the template)
+* templates/javascripts.html (add the directives script tag to the django template)
+* static/javascripts/posts/controllers/posts.controller.js (controller for the posts directive -- lots of good examples of formatting and layout methods here)
+* templates/javascripts.html (Add the controller js tag)
+* static/templates/posts/posts.html (template for the posts directive -- ng-cloak masks fouc, neat!)
+* static/javascripts/posts/directives/post.directive.js (single post directive "post")
+* static/templates/posts/post.html (single post directive template)
+* static/stylesheets/styles.css (a couple of css declarations for post elements)
+
+
 
