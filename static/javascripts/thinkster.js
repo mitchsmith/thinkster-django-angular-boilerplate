@@ -1,15 +1,16 @@
 angular
-    .module('thinkster', [
-        'thinkster.config',
-        'thinkster.routes',
-        'thinkster.authentication'
-    ]);
+  .module('thinkster', [
+    'thinkster.config',
+    'thinkster.routes',
+    'thinkster.authentication',
+    'thinkster.layout'
+  ]);
 
 angular
-    .module('thinkster.config', []);
+  .module('thinkster.config', []);
 
 angular
-    .module('thinkster.routes', ['ngRoute']);
+  .module('thinkster.routes', ['ngRoute']);
 
 /** csrf protection in concert with django **/
 angular
