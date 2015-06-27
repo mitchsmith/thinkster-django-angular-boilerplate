@@ -2,14 +2,14 @@
   'use strict';
 
   angular
-    .module('thinkster.profiles', [
-      'thinkster.profiles.controllers',
-      'thinkster.profiles.services'
+    .module('writinglab.profiles', [
+      'writinglab.profiles.controllers',
+      'writinglab.profiles.services'
     ]);
 
   angular
-    .module('thinkster.profiles.controllers', []);
+    .module('writinglab.profiles.controllers', []);
 
   angular
-    .module('thinkster.profiles.services', []);
+    .module('writinglab.profiles.services', []);
 })();

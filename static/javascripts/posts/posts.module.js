@@ -2,18 +2,18 @@
   'use strict';
 
   angular
-    .module('thinkster.posts', [
-      'thinkster.posts.controllers',
-      'thinkster.posts.directives',
-      'thinkster.posts.services'
+    .module('writinglab.posts', [
+      'writinglab.posts.controllers',
+      'writinglab.posts.directives',
+      'writinglab.posts.services'
     ]);
 
   angular
-    .module('thinkster.posts.controllers', []);
+    .module('writinglab.posts.controllers', []);
 
   angular
-    .module('thinkster.posts.directives', ['ngDialog']);
+    .module('writinglab.posts.directives', ['ngDialog']);
 
   angular
-    .module('thinkster.posts.services', []);
+    .module('writinglab.posts.services', []);
 })();

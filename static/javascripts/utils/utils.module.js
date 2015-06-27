@@ -2,10 +2,10 @@
   'use strict';
 
   angular
-    .module('thinkster.utils', [
-      'thinkster.utils.services'
+    .module('writinglab.utils', [
+      'writinglab.utils.services'
     ]);
 
   angular
-    .module('thinkster.utils.services', []);
+    .module('writinglab.utils.services', []);
 })();

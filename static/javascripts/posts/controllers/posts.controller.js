@@ -1,12 +1,12 @@
 /**
 * PostsController
-* @namespace thinkster.posts.controllers
+* @namespace writinglab.posts.controllers
 */
 (function () {
   'use strict';
 
   angular
-    .module('thinkster.posts.controllers')
+    .module('writinglab.posts.controllers')
     .controller('PostsController', PostsController);
 
   PostsController.$inject = ['$scope'];
@@ -25,7 +25,7 @@
     /**
     * @name activate
     * @desc Actions to be performed when this controller is instantiated
-    * @memberOf thinkster.posts.controllers.PostsController
+    * @memberOf writinglab.posts.controllers.PostsController
     */
     function activate() {
       /**
@@ -46,7 +46,7 @@
     * @name calculateNumberOfColumns
     * @desc Calculate number of columns based on screen width
     * @returns {Number} The number of columns containing Posts
-    * @memberOf thinkster.posts.controllers.PostsControllers
+    * @memberOf writinglab.posts.controllers.PostsControllers
     */
     function calculateNumberOfColumns() {
       var width = $(window).width();
@@ -67,7 +67,7 @@
     * @name approximateShortestColumn
     * @desc An algorithm for approximating which column is shortest
     * @returns The index of the shortest column
-    * @memberOf thinkster.posts.controllers.PostsController
+    * @memberOf writinglab.posts.controllers.PostsController
     */
     function approximateShortestColumn() {
       var scores = vm.columns.map(columnMapFn);
@@ -107,7 +107,7 @@
     * @desc Renders Posts into columns of approximately equal height
     * @param {Array} current The current value of `vm.posts`
     * @param {Array} original The value of `vm.posts` before it was updated
-    * @memberOf thinkster.posts.controllers.PostsController
+    * @memberOf writinglab.posts.controllers.PostsController
     */
     function render(current, original) {
       if (current !== original) {

@@ -1,12 +1,12 @@
 /**
 * Register controller
-* @namespace thinkster.authentication.controllers
+* @namespace writinglab.authentication.controllers
 */
 (function () {
   'use strict';
 
   angular
-    .module('thinkster.authentication.controllers')
+    .module('writinglab.authentication.controllers')
     .controller('RegisterController', RegisterController);
 
   RegisterController.$inject = ['$location', '$scope', 'Authentication'];
@@ -25,7 +25,7 @@
     /**
      * @name activate
      * @desc Actions to be performed when this controller is instantiated
-     * @memberOf thinkster.authentication.controllers.RegisterController
+     * @memberOf writinglab.authentication.controllers.RegisterController
      */
     function activate() {
       // If the user is authenticated, they should not be here.
@@ -41,7 +41,7 @@
     * @param {string} password The password entered by the user
     * @param {string} username The username entered by the user
     * @returns {Promise}
-    * @memberOf thinkster.authentication.services.Authentication
+    * @memberOf writinglab.authentication.services.Authentication
     */
     function register(email, password, username) {
       return $http.post('/api/v1/accounts/', {
