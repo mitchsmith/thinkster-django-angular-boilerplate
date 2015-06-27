@@ -41,6 +41,8 @@
     * Include the new js files in the appropriate Django template (eg. templates/javascripts.html)
 * Create/edit layout template for the navbar register controll (eg. static/templates/layout/navbar.html) 
 
+##A more general example
+
 *SAME THING FOR POSTS: localhost:/api/v1/posts/ and '/api/v1/accounts/' + username + '/posts/'*
 
 * static/javascripts/posts/posts.module.js (define module)
@@ -76,7 +78,32 @@
     * createPostSuccessFn calls Snackbar.show() (See tutorial excerpt 1 below)
 * templates/javascripts.html (Add the create controller js tag)
 
-*TUTORIAL EXCERPT 1*
+## Another useful example
+
+### (A good candidate for turning into a generic stub)
+
+*Profiles (Endpoints exist, so it's all Angular)*
+
+* Define the nodules in static/javascripts/profiles/profiles.module.js
+    * .controllers (with empty dependency list)
+    * .services (with empty dependency list)
+* Register the profile modules as deps in the root app static/javascripts/thinkster.js
+* Add the modules script tag to templats/javascript.html
+* Create the profile factory in static/javascripts/profiles/services/profile.service.js
+* Add the services script tag to templates/javascripts.html
+* Create the partial: static/templates/profiles/profile.html
+* Define a controller in static/javascripts/profiles/controllers/profile.controller.js
+* Add the controller to templates/javacripts.html
+* Add routes to static/javascripts/thinkster.routes.js
+
+*Add the update interface*
+
+* Define a settings controller in static/javascripts/profiles/controllers/profile-settings.controller.js
+* Add settings controller to templates/javascripts.html
+* Create the settings form partial in static/templates/profiles/settings.html
+* Add routes to static/javascripts/thinkster.routes.js
+
+###TUTORIAL EXCERPT 1
 
 Earlier we set up an event listener in IndexController that listened for the post.created event and then pushed the new post onto the front of vm.posts. Let's look at this a little more closely, as this turns out to be an important feature of rich web applications.
 
