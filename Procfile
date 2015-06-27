@@ -1,1 +1,1 @@
-web: gunicorn writinglab_django_angular_boilerplate.wsgi --log-file -
+web: gunicorn writinglab.wsgi --log-file -

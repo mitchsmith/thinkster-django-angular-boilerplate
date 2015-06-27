@@ -1,5 +1,5 @@
 """
-Django settings for writinglab_django_angular_boilerplate project.
+Django settings for writinglab project.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/1.7/topics/settings/
@@ -53,9 +53,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'writinglab_django_angular_boilerplate.urls'
+ROOT_URLCONF = 'writinglab.urls'
 
-WSGI_APPLICATION = 'writinglab_django_angular_boilerplate.wsgi.application'
+WSGI_APPLICATION = 'writinglab.wsgi.application'
 
 AUTH_USER_MODEL = 'authentication.Account'
 

@@ -1,5 +1,5 @@
 from django.conf.urls import patterns, url, include
-from writinglab_django_angular_boilerplate.views import IndexView
+from writinglab.views import IndexView
 from rest_framework_nested import routers
 from authentication.views import AccountViewSet, LoginView, LogoutView
 from posts.views import AccountPostsViewSet, PostViewSet
