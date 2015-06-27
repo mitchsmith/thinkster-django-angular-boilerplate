@@ -74,7 +74,7 @@
     * A bunch of deps ['$rootScope', '$scope', 'Authentication', 'Snackbar', 'Posts']
     * Quite a few unfamilliar builtin methods: $rootScope.$broadcast, $scope.closeThisDialog(), etc.
     * createPostSuccessFn calls Snackbar.show() (See tutorial excerpt 1 below)
-* 
+* templates/javascripts.html (Add the create controller js tag)
 
 *TUTORIAL EXCERPT 1*
 
